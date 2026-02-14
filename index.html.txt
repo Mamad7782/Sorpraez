@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<title>سوپرایز 🎁</title>
+<style>
+  body {
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:black;
+    flex-direction:column;
+  }
+  #text {
+    color:white;
+    font-size:24px;
+    text-align:center;
+    margin-bottom:20px;
+  }
+  img {
+    max-width:90%;
+    display:none;
+    border-radius:10px;
+    box-shadow: 0 0 20px white;
+  }
+</style>
+</head>
+<body>
+<div id="text">🎁 روی صفحه بزن تا سوپرایز بشه!</div>
+<img id="pic" src="https://i.imgur.com/OvUzZ0b.jpg" alt="Surprise">
+<audio id="music" src="https://drive.google.com/uc?export=download&id=1cRGYzqF9I4f1lq4bS11PudP0-fBFIykg"></audio>
+
+<script>
+document.body.addEventListener("click", function(){
+  document.getElementById("text").style.display="none";
+  let img = document.getElementById("pic");
+  img.style.display="block";
+  let music = document.getElementById("music");
+  music.play();
+});
+</script>
+</body>
+</html>
